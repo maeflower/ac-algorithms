@@ -14,6 +14,14 @@
 //
 //    For example, given array A = [3, 8, 9, 7, 6] and K = 3, the function should return [9, 7, 6, 3, 8].\
 
+var k =[3, 8, 9, 7, 6];
+
 function cyclicRotation(arr, rotation){
-    //Your code here...
+    for(var i=0; i<rotation; i++){
+    var elementArray = arr.pop();
+    arr.unshift(elementArray);
+    }
+    return arr;
 }
+var result = cyclicRotation(k,3);
+console.log(result);
