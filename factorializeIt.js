@@ -6,9 +6,14 @@
 // For example: 5! = 1 * 2 * 3 * 4 * 5 = 120
 
 // Check out Arithmetic Operators https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators
-
+ 
 function factorializeIt(num) {
-  //your code here
-}
-
-factorializeIt(5);
+  var result = 1;
+  for(var i = 1; i <= num; i++){ 
+    result = result * i;
+ 
+  } 
+  return result;
+ }
+ 
+ factorializeIt(5);
